@@ -23,7 +23,7 @@ public class _03_ValidateLocationFunctionality {
 
         driver.get("https://demo.openmrs.org/openmrs/login.htm");
 
-        System.out.println("Navigating to OpenMRS Website...");
+        System.out.println("Navigating to OpenMRS Website");
     }
 
     @Given("Enter valid username into the {string} field")
@@ -31,7 +31,7 @@ public class _03_ValidateLocationFunctionality {
 
         WebElement usernameField = driver.findElement(By.id("Username"));
         usernameField.sendKeys("your_username");
-        System.out.println("Entering valid username into the " + field + " field...");
+        System.out.println("Entering valid username into the " + field + " field");
     }
 
     @Given("Enter valid password into the {string} field")
@@ -39,7 +39,7 @@ public class _03_ValidateLocationFunctionality {
 
         WebElement passwordField = driver.findElement(By.id("Password"));
         passwordField.sendKeys("your_password");
-        System.out.println("Entering valid password into the " + field + " field...");
+        System.out.println("Entering valid password into the " + field + " field");
     }
 
     @Given("Select {string}")
@@ -47,7 +47,7 @@ public class _03_ValidateLocationFunctionality {
 
         WebElement locationElement = driver.findElement(By.id("location"));
         locationElement.sendKeys(location);
-        System.out.println("Selecting " + location + "...");
+        System.out.println("Selecting " + location + " ");
     }
 
     @When("Click on the login button")
@@ -55,7 +55,7 @@ public class _03_ValidateLocationFunctionality {
 
         WebElement loginButton = driver.findElement(By.id("loginButton"));
         loginButton.click();
-        System.out.println("Clicking on the login button...");
+        System.out.println("Clicking on the login button");
     }
 }
 

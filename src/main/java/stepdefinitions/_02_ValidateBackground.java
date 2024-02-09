@@ -26,20 +26,20 @@ public class _02_ValidateBackground {
 
             driver.get("https://demo.openmrs.org/openmrs/login.htm");
 
-            System.out.println("Navigating to OpenMRS Website...");
+            System.out.println("Navigating to OpenMRS Website");
         }
 
         @Given("Enter valid username into the {string} field")
         public void enter_valid_username(String field) {
 
-            System.out.println("Entering valid username into the " + field + " field...");
+            System.out.println("Entering valid username into the " + field + " field");
 
         }
 
         @Given("Enter valid password into the {string} field")
         public void enter_valid_password(String field) {
 
-            System.out.println("Entering valid password into the " + field + " field...");
+            System.out.println("Entering valid password into the " + field + " field");
 
         }
 
@@ -76,7 +76,7 @@ public class _02_ValidateBackground {
         @Then("Should see background changes")
         public void should_see_background_changes() {
 
-            System.out.println("Verifying background changes...");
+            System.out.println("Verifying background changes");
 
         }
 
